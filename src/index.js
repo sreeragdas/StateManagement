@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+
 import reportWebVitals from './reportWebVitals';
+import {Demo} from '../src/Screens/Demo'
+import { StoreProvider } from './stores/Index';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+  <StoreProvider>
+    {/* <Report /> */}
+    <Demo />
+    </StoreProvider>
   </React.StrictMode>
 );
 
